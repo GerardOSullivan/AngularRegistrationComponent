@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="container">
+        <h1 class="form-heading">
+
+        </h1>
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h2>Register Account</h2>
+                    <p>Please enter your email, password and phone number</p>
+                </div>
+                <form id="Login">
+                    <div class="form-group">
+                    <input class="form-control" id="inputEmail" type="email" placeholder="Email Address" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="inputPassword" type="password" placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="inputPassword" type="number" placeholder="Phone Number" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}">
+                </div>
+                <button class="btn btn-primary" (click)="postData()" type="submit">Register</button>
+                </form>
+                    <div class="panel">
+                        <p>{{result}}</p>
+                    </div>
+            </div>
+    </div>
+</div>
